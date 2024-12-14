@@ -1,6 +1,6 @@
 ![C++.png](C++.png)
 
-### Add Title
+### Marc's Template
 
 <sub>[previous](../) • [home](../README.md) • [next](../)</sub>
 
