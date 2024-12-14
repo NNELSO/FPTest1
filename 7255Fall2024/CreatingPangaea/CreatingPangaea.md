@@ -60,7 +60,8 @@ Learning and Creating Pangaea <br>
 * Here you can take a look at the code I used for the header file:
 
 > Defense tower header file: [DefenseTower.h](Files/DefenseTower.h) <br>
-
+> 
+* For now we leave the Source file or ".cpp" file alone.
 
 <br>
 <br>
