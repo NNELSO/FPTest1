@@ -59,7 +59,8 @@ Learning and Creating Pangaea <br>
 * 1st thing that should always be added to this file is "#pragma once", it helps the compiler not freakout if there are redundancies.<br>
 * Here you can take a look at the code I used for the header file:
 
-> [DefenseTower.h(CreatingPangaea/CodeFiles/DefenseTower.h)]
+> Defense tower header file: [DefenseTower.h](Files/DefenseTower.h) <br>
+
 
 <br>
 <br>
