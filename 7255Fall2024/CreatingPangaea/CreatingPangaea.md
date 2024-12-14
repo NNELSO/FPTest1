@@ -3,7 +3,7 @@ Learning and Creating Pangaea <br>
 ---
 
 <br>
-<img height="80%" src="Images/C++.png" width="80%"/>
+<img src="Images/C++.png"/>
 <br>
 <br>
 
@@ -110,6 +110,6 @@ Learning and Creating Pangaea <br>
 
 
 ---
->Previous: [Beginning]() |
+>Previous: [Beginning](#L38/README.md) |
 >Next: [PowerUps](PowerUps/PowerUps.md)
 ---
