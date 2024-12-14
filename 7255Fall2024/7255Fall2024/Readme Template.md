@@ -12,25 +12,25 @@ Chapter introduction here.
 
 ---
 
-##### `Step 1.`\|`UECPPFTC`|:small_blue_diamond:
+##### `Step 1.`\|`UECPPFTC`| :small_blue_diamond:
 
 ![alt_text](images/.png)
 
 ![](../images/line2.png)
 
-##### `Step 2.`\|`UECPPFTC`|:small_blue_diamond: :small_blue_diamond: 
+##### `Step 2.`\|`UECPPFTC`| :small_blue_diamond: :small_blue_diamond: 
 
 ![alt_text](images/.png)
 
 ![](../images/line2.png)
 
-##### `Step 3.`\|`UECPPFTC`|:small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
+##### `Step 3.`\|`UECPPFTC`| :small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
 
 ![alt_text](images/.png)
 
 ![](../images/line2.png)
 
-##### `Step 4.`\|`UECPPFTC`|:small_blue_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
+##### `Step 4.`\|`UECPPFTC`| :small_blue_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
 
 ![alt_text](images/.png)
 
