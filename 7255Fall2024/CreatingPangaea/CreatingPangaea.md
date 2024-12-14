@@ -3,9 +3,10 @@ Learning and Creating Pangaea <br>
 ---
 
 <br>
+
+---
 <img src="Images/C++.png"/>
-<br>
-<br>
+---
 
 ---
 
@@ -110,6 +111,6 @@ Learning and Creating Pangaea <br>
 
 
 ---
->Previous: [Beginning](#L38/README.md) |
+>Previous: [Beginning]() |
 >Next: [PowerUps](PowerUps/PowerUps.md)
 ---
