@@ -1,10 +1,8 @@
 
 Learning and Creating Pangaea <br>
 ---
-
 <br>
 
----
 <img src="Images/C++.png"/>
 ---
 
@@ -50,7 +48,7 @@ Learning and Creating Pangaea <br>
 <br>
 <br>
 
-### Coding DenfenseTower in Ryder
+### Coding DefenseTower in Ryder
 
 ---
 <img height="70%" src="Images/DefenseHeader.png" width="70%"/><br>
@@ -111,6 +109,6 @@ Learning and Creating Pangaea <br>
 
 
 ---
->Previous: [Beginning]() |
+>Previous: [Beginning](/7255Fall2024/README.md) |
 >Next: [PowerUps](PowerUps/PowerUps.md)
 ---
