@@ -67,7 +67,13 @@ Learning and Creating Pangaea <br>
 <br>
 
 
-## Title
+## Next <br>
+---
+
+### Creating a Projectile class <br>
+---
+<br>
+
 
 ---
 <img height="70%" src="Images/" width="70%"/><br>
