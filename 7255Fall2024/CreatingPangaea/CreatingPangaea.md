@@ -164,18 +164,18 @@ But it is always a good idea to try, because it will give you the file and line 
 
 
 ---
-## Title <br>
+## PlayerAvatarAnimInstance <br>
+
 ---
-<img  height="200%" width="200" src="Images/PABP.png"/> <br>
+<img  height="200%" width="200" src="Images/HeroBlendS.png"/> <br>
 ---
 <br>
 <txt height="100%" width="100%" />
 
-* This new cpp blueprint will be added as a character, doing so allows for a skeletal mesh,
-  movement, and a capsule.<br>
+* This new cpp blueprint will be added as an AnimInstance.<br>
 
->APlayerAvatar Header file: [APlayerAvatar.h](Files/PlayerAvatar.h.txt)  <br>
->APlayerAvatar Constructor file: [APlayerAvatar.cpp](Files/PlayerAvatar.cpp.txt) <br>
+>PlayerAvatarAnimInstance Header file: [PlayerAvatarAnimInstance.h](Files/PlayerAvatarAnimInstance.h.txt)  <br>
+>PlayerAvatarAnimInstance Constructor file: [PlayerAvatarAnimInstance.cpp.txt](Files/PlayerAvatarAnimInstance.cpp.txt) <br>
 <br>
 
   <br>
