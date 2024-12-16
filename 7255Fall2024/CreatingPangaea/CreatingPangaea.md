@@ -156,10 +156,31 @@ movement, and a capsule.<br>
 <br>
 
   <br>
-  <br>
+
+* Whenever adding something new into the game you should be compiling your build. <br>
+* At certain times the game will not build out because it is missing a component that has been added yet, or something that you just added that needs more detail.
+But it is always a good idea to try, because it will give you the file and line that is stopping the build most of the time.<br>
+<br>
+
 
 ---
 ## Title <br>
+---
+<img  height="200%" width="200" src="Images/PABP.png"/> <br>
+---
+<br>
+<txt height="100%" width="100%" />
+
+* This new cpp blueprint will be added as a character, doing so allows for a skeletal mesh,
+  movement, and a capsule.<br>
+
+>APlayerAvatar Header file: [APlayerAvatar.h](Files/PlayerAvatar.h.txt)  <br>
+>APlayerAvatar Constructor file: [APlayerAvatar.cpp](Files/PlayerAvatar.cpp.txt) <br>
+<br>
+
+  <br>
+  <br>
+
 
 
 
