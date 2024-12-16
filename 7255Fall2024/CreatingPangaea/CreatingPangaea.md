@@ -178,7 +178,32 @@ But it is always a good idea to try, because it will give you the file and line 
 >PlayerAvatarAnimInstance Constructor file: [PlayerAvatarAnimInstance.cpp.txt](Files/PlayerAvatarAnimInstance.cpp.txt) <br>
 <br>
 
-  <br>
+* Part created a unique set of challenges as the book was not very clear and 
+there were additional steps that were needed outside of the cpp blueprints.<br>
+* You have to create an ABP_PlayerAvatar (Animation|Animation Blueprint) blueprint 
+to make it work.<br>
+* Using the PlayerAvatarAnimInstance class you just create, to make the blueprint.<br>
+* You will then need to make a Blend Space 1D asset to use in your state machine in the blueprint.<br>
+* Naming the horizontal axis "Speed" and adding in key point markers for the idle at 0,
+walk about a 1/3 the distance away from the last one, and at the end a fast walk or run.<br>
+
+---
+<img  height="200%" width="200" src="Images/StateMachine.png"/> <br>
+---
+<txt height="100%" width="100%" />
+Example of the State Machine<br>
+
+---
+<img  height="200%" width="200" src="Images/HeroSM.png"/> <br>
+---
+<txt height="100%" width="100%" />
+Here is the hero's state machine, 
+it's very simple and of course the more you expand your 
+character the more complex it will be.<br>
+
+
+
+<br>
   <br>
 
 
