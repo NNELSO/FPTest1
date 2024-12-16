@@ -101,7 +101,12 @@ I made it to about page 205 in the book before the game just refused to compile 
 ---
 <img src="Images/RadiusDTC.png" height="250%" width="250"/><br>
 ---
-  <br>
+Important thing to remember to adjust is the sphere radius of the SphereCollisionComponent.<br>
+If you forget this your tower will have a tiny attack radius as that is what it will be used for.<br>
+<br>
+---
+<img src="Images/StaticMeshDT.png" height="250%" width="250"/><br>
+---
   <br>
 
 ## Title
@@ -110,6 +115,7 @@ I made it to about page 205 in the book before the game just refused to compile 
 <img height="70%" src="Images/" width="70%"/><br>
 ---
 <br>
+
 
 * 1 <br>
   <br>
