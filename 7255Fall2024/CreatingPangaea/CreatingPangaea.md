@@ -324,7 +324,11 @@ right so the sword or weapon doesn't look like its going through the character's
 >Weapon Header file: [Weapon.h](Files/Weapon.h.txt)  <br>
 >Weapon Constructor file: [Weapon.cpp](Files/Weapon.cpp.txt) <br>
 <br>
+---
 
+>Pangaea.Build.cs: [Pangaea.Build.cs](Files/Pangaea.Build.cs.txt)  <br>
+
+ <br>
 
 
 
