@@ -201,7 +201,29 @@ Here is the hero's state machine,
 it's very simple and of course the more you expand your 
 character the more complex it will be.<br>
 
+---
+<img  height="200%" width="200" src="Images/State==.png"/> <br>
+---
+<txt height="100%" width="100%" />
+Also, in the book it shows you an image like this on, 
+but does not clarify how these elements are connected.
+It uses an enume, which you can find by typing "==" into the node search bar.<br>
 
+---
+
+## PlayerAvatarAnimInstance <br>
+
+---
+<img  height="200%" width="200" src="Images/HeroBlendS.png"/> <br>
+---
+<br>
+<txt height="100%" width="100%" />
+
+* This new cpp blueprint will be added as an AnimInstance.<br>
+
+>PlayerAvatarAnimInstance Header file: [PlayerAvatarAnimInstance.h](Files/PlayerAvatarAnimInstance.h.txt)  <br>
+>PlayerAvatarAnimInstance Constructor file: [PlayerAvatarAnimInstance.cpp.txt](Files/PlayerAvatarAnimInstance.cpp.txt) <br>
+<br>
 
 <br>
   <br>
