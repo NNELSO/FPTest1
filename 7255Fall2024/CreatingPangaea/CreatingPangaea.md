@@ -270,6 +270,7 @@ to make it turn green to be easier to see and adjust.<br>
 ---
 
 * This cpp blueprint needs to be added as an AnimInstance class.<br>
+* And just like the player one this will need an animation blueprint to go with it.<br>
 
 
 >UEnemyAnimInstance Header file: [UEnemyAnimInstance.h](Files/UEnemyAnimInstance.h.txt)  <br>
@@ -278,6 +279,33 @@ to make it turn green to be easier to see and adjust.<br>
 
 <br>
   <br>
+
+---
+
+## PangaeaCharacter <br>
+
+---
+
+<br>
+<txt height="100%" width="100%" />
+
+
+>PangaeaCharacter Header file: [PangaeaCharacter.h](Files/PangaeaCharacter.h.txt)  <br>
+>PangaeaCharacter Constructor file: [PangaeaCharacter.cpp](Files/PangaeaCharacter.cpp.txt) <br>
+<br>
+
+---
+
+### PangaeaPlayerController <br>
+
+---
+
+<br>
+<txt height="100%" width="100%" />
+
+
+>PangaeaPlayerController Header file: [PangaeaPlayerController.h](Files/PangaeaPlayerController.h.txt)  <br>
+>PangaeaPlayerController Constructor file: [PangaeaPlayerController.cpp](Files/PangaeaPlayerController.cpp.txt) <br>
 
 
 
