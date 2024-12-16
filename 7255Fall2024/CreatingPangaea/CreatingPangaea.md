@@ -175,7 +175,7 @@ But it is always a good idea to try, because it will give you the file and line 
 * This new cpp blueprint will be added as an AnimInstance.<br>
 
 >PlayerAvatarAnimInstance Header file: [PlayerAvatarAnimInstance.h](Files/PlayerAvatarAnimInstance.h.txt)  <br>
->PlayerAvatarAnimInstance Constructor file: [PlayerAvatarAnimInstance.cpp.txt](Files/PlayerAvatarAnimInstance.cpp.txt) <br>
+>PlayerAvatarAnimInstance Constructor file: [PlayerAvatarAnimInstance.cpp](Files/PlayerAvatarAnimInstance.cpp.txt) <br>
 <br>
 
 * Part created a unique set of challenges as the book was not very clear and 
@@ -211,18 +211,69 @@ It uses an enume, which you can find by typing "==" into the node search bar.<br
 
 ---
 
-## PlayerAvatarAnimInstance <br>
+## Enemy <br>
 
 ---
-<img  height="200%" width="200" src="Images/HeroBlendS.png"/> <br>
+<img  height="200%" width="200" src="Images/EnemyBP.png"/> <br>
 ---
 <br>
 <txt height="100%" width="100%" />
 
-* This new cpp blueprint will be added as an AnimInstance.<br>
+* This new cpp blueprint will be added as a Character.<br>
 
->PlayerAvatarAnimInstance Header file: [PlayerAvatarAnimInstance.h](Files/PlayerAvatarAnimInstance.h.txt)  <br>
->PlayerAvatarAnimInstance Constructor file: [PlayerAvatarAnimInstance.cpp.txt](Files/PlayerAvatarAnimInstance.cpp.txt) <br>
+>Enemy Header file: [Enemy.h](Files/Enemy.h.txt)  <br>
+>Enemy Constructor file: [Enemy.cpp](Files/Enemy.cpp.txt) <br>
+<br>
+
+* Now most you the stuff you had to do for the player is repeated but other new elements 
+are added because this is not a character that a person will control but the engine will.<br>
+* Also the sensing component you will have to make sure is added when you make your first enemy BP.<br>
+* I had issues getting the AIController to work.<br>
+---
+
+### EnemyController <br>
+
+---
+<img  height="200%" width="200" src="Images/EnemyBlendS.png"/> <br>
+---
+<br>
+<txt height="100%" width="100%" />
+
+* This new cpp blueprint will be added as a subclass of AIController.<br>
+* BlendSpace Blueprint is needed you this character too, if you are not using the same character static mesh.<br>
+* A new state machine will need to be made for it as well.<br>
+* And a Navmesh.<br>
+
+>EnemyController Header file: [EnemyController.h](Files/EnemyController.h.txt)  <br>
+>EnemyController Constructor file: [EnemyController.cpp](Files/EnemyController.cpp.txt) <br>
+<br>
+
+---
+<img  height="200%" width="200" src="Images/EnemyABP1.png"/> <br>
+---
+---
+<img  height="200%" width="200" src="Images/EnemyABP2.png"/> <br>
+---
+---
+<img  height="200%" width="200" src="Images/EnemyABP1.png"/> <br>
+---
+---
+<img  height="200%" width="200" src="Images/NavMesh.png"/> <br>
+---
+<txt height="100%" width="100%" />
+
+* If you have the NavMesh selected you can press "P" on your keyboard 
+to make it turn green to be easier to see and adjust.<br>
+---
+### UEnemyAnimInstance <br>
+
+---
+
+* This cpp blueprint needs to be added as an AnimInstance class.<br>
+
+
+>UEnemyAnimInstance Header file: [UEnemyAnimInstance.h](Files/UEnemyAnimInstance.h.txt)  <br>
+>UEnemyAnimInstance Constructor file: [UEnemyAnimInstance.cpp](Files/UEnemyAnimInstance.cpp.txt) <br>
 <br>
 
 <br>
