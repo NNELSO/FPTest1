@@ -66,11 +66,12 @@ Learning and Creating Pangaea <br>
 <br>
 <br>
 
-
-## Having Build Issues <br>
 ---
+## Having Build Issues <br>
+
 
 ### Switching Tactics <br>
+
 ---
 <br>
 
@@ -81,11 +82,12 @@ and some key things in each blueprint/lesson that I felt was useful knowledge fo
 
 
 ##  DefenseTower <br>
----
-
-
 
 ---
+
+
+
+
 <img height="70%" src="Images/DefenseTower.png" width="70%"/><br>
 ---
 <br>
@@ -100,7 +102,8 @@ I made it to about page 205 in the book before the game just refused to compile 
 > 
 ---
 <img src="Images/RadiusDTC.png" height="250%" width="250"/><br>
----
+--- 
+
 Important thing to remember to adjust is the sphere radius of the SphereCollisionComponent.<br>
 If you forget this your tower will have a tiny attack radius as that is what it will be used for.<br>
 <br>
