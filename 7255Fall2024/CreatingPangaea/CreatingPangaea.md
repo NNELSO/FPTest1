@@ -86,12 +86,17 @@ and some key things in each blueprint/lesson that I felt was useful knowledge fo
 
 
 ---
-<img height="70%" src="Images/" width="70%"/><br>
+<img height="70%" src="Images/DefenseTower.png" width="70%"/><br>
 ---
 <br>
 
-* 1 <br>
-* 2<br>
+* For almost every new class that you are adding into the game you will need to files. 
+A header file also known as ".h" file, and a constructor file also known as ".ccp" file. 
+I will share both of them here as text files. <br>
+I made it to about page 205 in the book before the game just refused to compile and I gave up on trying to sort out what was broken. <br>
+
+> Defense tower header file where I stopped at: [Defense Header File](Files/ADefenseTower.h.txt) <br>
+> 
   <br>
   <br>
 
