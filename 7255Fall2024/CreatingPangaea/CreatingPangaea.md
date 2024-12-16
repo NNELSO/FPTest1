@@ -131,7 +131,7 @@ Remember to add your choice of static mesh and the material in the blueprint.<br
 <br>
 
 <img  height="250%" width="250" src="Images/FirebalMat.png"/> <br>
----
+-
 <txt height="50%" width="50%"/> 
 Fireball Material Blueprint<br>
   <br>
