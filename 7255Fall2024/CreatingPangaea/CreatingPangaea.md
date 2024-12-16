@@ -93,7 +93,7 @@ and some key things in each blueprint/lesson that I felt was useful knowledge fo
 <br>
 
 * For almost every new class that you are adding into the game you will need to files. 
-A header file also known as ".h" file, and a constructor file also known as ".ccp" file. 
+A header file also known as ".h" file, and a constructor file also known as ".cpp" file. 
 I will share both of them here as text files. <br>
 I made it to about page 205 in the book before the game just refused to compile and I gave up on trying to sort out what was broken. <br>
 
@@ -127,7 +127,7 @@ Remember to add your choice of static mesh and the material in the blueprint.<br
 <txt height="50%" width="50%"/>
 
 >Projectile Header file: [Projectile.h](Files/Projectile.h.txt)  <br>
->Projectile Constructor file: [Projectile.ccp](Files/Projectile.ccp.txt) <br>
+>Projectile Constructor file: [Projectile.cpp](Files/Projectile.cpp.txt) <br>
 <br>
 
 <img  height="250%" width="250" src="Images/FirebalMat.png"/> <br>
@@ -140,16 +140,21 @@ Fireball Material Blueprint<br>
 
 <txt height="100%" width="100%" />
 
-## 
+## APlayerAvatar Class
 
 ---
-<img height="70%" src="Images/" width="70%"/><br>
+<img  height="200%" width="200" src="Images/PABP.png"/> <br>
 ---
 <br>
+<txt height="100%" width="100%" />
 
-* 1 <br>
-* 2 <br>
-* 3 <br>
+* This new cpp blueprint will be added as a character, doing so allows for a skeletal mesh, 
+movement, and a capsule.<br>
+
+>APlayerAvatar Header file: [APlayerAvatar.h](Files/PlayerAvatar.h.txt)  <br>
+>APlayerAvatar Constructor file: [APlayerAvatar.cpp](Files/PlayerAvatar.cpp.txt) <br>
+<br>
+
   <br>
   <br>
 
