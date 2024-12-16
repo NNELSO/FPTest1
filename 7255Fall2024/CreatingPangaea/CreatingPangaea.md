@@ -99,7 +99,7 @@ I made it to about page 205 in the book before the game just refused to compile 
 > Defense tower constructor file: [Defense Constructor File](Files/DefenseTower.cpp.txt) <br>
 > 
 ---
-<img src="Images/RadiusDTC.png" height="100%" width="100"/><br>
+<img src="Images/RadiusDTC.png" height="150%" width="150"/><br>
 ---
   <br>
   <br>
