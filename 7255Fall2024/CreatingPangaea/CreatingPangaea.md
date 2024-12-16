@@ -116,13 +116,13 @@ If you forget this your tower will have a tiny attack radius as that is what it 
 <txt height="60%" width="60%"/>
 Remember to add your choice of static mesh and the material in the blueprint.<br>
 <br>
----
   <br>
+<br>
 
-## Title
+## Making Projectile class
 
 ---
-<img height="70%" src="Images/" width="70%"/><br>
+<img  height="250%" width="250" src="Images/FireballBP.png"/><br>
 ---
 <br>
 
