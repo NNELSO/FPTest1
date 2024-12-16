@@ -124,10 +124,12 @@ Remember to add your choice of static mesh and the material in the blueprint.<br
 ---
 <img  height="250%" width="250" src="Images/FireballBP.png"/><br>
 ---
-<br>
+---
+<txt height="50%" width="50%"/>
 
+>Projectile Header file: [Projectile.h](Files/Projectile.h.txt)  <br>
+>Projectile Constructor file: [Projectile.ccp](Files/Projectile.ccp.txt) <br>
 
-* 1 <br>
   <br>
   <br>
 
