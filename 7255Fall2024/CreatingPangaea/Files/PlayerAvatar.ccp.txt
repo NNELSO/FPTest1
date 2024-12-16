@@ -1,0 +1,143 @@
+// Fill out your copyright notice in the Description page of Project Settings.
+
+
+#include "PlayerAvatar.h"
+
+#include "PlayerAvatarAnimInstance.h"
+#include "GameFramework/CharacterMovementComponent.h"
+#include "GameFramework/SpringArmComponent.h"
+#include "Engine/LocalPlayer.h"
+#include "Camera/CameraComponent.h"
+#include "Components/CapsuleComponent.h"
+#include "GameFramework/Controller.h"
+#include "EnhancedInputComponent.h"
+#include "EnhancedInputSubsystems.h"
+#include "InputActionValue.h"
+
+
+// Sets default values
+APlayerAvatar::APlayerAvatar()
+{
+	// Set this character to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
+	PrimaryActorTick.bCanEverTick = true;
+
+	//set size for collision capsule
+	GetCapsuleComponent() -> InitCapsuleSize(42.f,96.0f);
+	
+	//lock the character's rotation from player
+	bUseControllerRotationPitch = false;
+	bUseControllerRotationYaw = false;
+	bUseControllerRotationRoll = false;
+
+	//Create the camera spring arm
+	_springArmComponent = CreateDefaultSubobject
+	<USpringArmComponent>(TEXT("SpringArm"));
+	_springArmComponent -> SetupAttachment(RootComponent);
+	_springArmComponent -> SetUsingAbsoluteRotation(true);
+	_springArmComponent -> TargetArmLength = 800.0f;
+	_springArmComponent -> SetRelativeRotation( FRotator
+		(-60.0f,0.0f,0.0f));
+	_springArmComponent -> bDoCollisionTest = false;
+
+	//Creating the Camera
+	_cameraComponent = CreateDefaultSubobject
+	<UCameraComponent>(TEXT("Camera"));
+	_cameraComponent -> SetupAttachment(_springArmComponent,
+		USpringArmComponent::SocketName);
+	_cameraComponent -> bUsePawnControlRotation = false;
+
+	//player's movement component
+	auto characterMovement = GetCharacterMovement();
+	characterMovement -> bOrientRotationToMovement = true;
+	characterMovement -> RotationRate = FRotator(
+		0.0f,640.0f,0.0f);
+	characterMovement -> bConstrainToPlane = true;
+	characterMovement -> bSnapToPlaneAtStart = true;
+
+	NiagaraComponent = CreateDefaultSubobject<UNiagaraComponent>(TEXT("NiagaraComponent"));
+	NiagaraComponent -> SetupAttachment(GetMesh());
+	
+}
+
+// Called when the game starts or when spawned
+void APlayerAvatar::BeginPlay()
+{
+	Super::BeginPlay();
+
+}
+
+// Called every frame
+void APlayerAvatar::Tick(float DeltaTime)
+{
+	Super::Tick(DeltaTime);
+
+	//Set players Velocity as "Speed" var
+	UPlayerAvatarAnimInstance* animInst = Cast<
+		UPlayerAvatarAnimInstance>(GetMesh() -> GetAnimInstance());
+	animInst -> Speed = GetCharacterMovement() -> Velocity.Size2D();
+
+	//Allows player to attack
+	if (_AttackCountingDown == AttackInterval)
+	{
+		animInst -> State = EPlayerState::Attack;
+	}
+	if (_AttackCountingDown > 0.0f)
+	{
+		_AttackCountingDown -= DeltaTime;
+	}
+	
+}
+
+//Player PowerUp Add and Remove
+// void APlayerAvatar::AddPowerUp(APowerUp* PowerUp)
+// {
+// 	CurrentPowerUp = PowerUp;
+// 	NiagaraComponent -> SetAsset(NiagaraEffects[PowerUp->PowerUpType]);
+// 	NiagaraComponent -> Activate(true);
+// 	GetMesh()->SetOverlayMaterial(PowerUp->OverlayToApply);
+// 	bIsPoweredUp = 
+// }
+
+// Called to bind functionality to input
+void APlayerAvatar::SetupPlayerInputComponent(UInputComponent* PlayerInputComponent)
+{
+	Super::SetupPlayerInputComponent(PlayerInputComponent);
+}
+
+int APlayerAvatar::GetHealthPoints()
+{
+	return _HealthPoints;
+}
+
+
+bool APlayerAvatar::IsKilled()
+{
+	return (_HealthPoints <= 0.0f);
+}
+
+
+bool APlayerAvatar::CanAttack()
+{
+	auto animInat = Cast<UPlayerAvatarAnimInstance>(GetMesh() -> GetAnimInstance());
+	return (_AttackCountingDown <= 0.0f
+		&& animInat -> State == EPlayerState::Locomotion);
+}
+
+
+void APlayerAvatar::Attack()
+{
+	_AttackCountingDown = AttackInterval;
+}
+
+void APlayerAvatar::Hit(int damage)
+{
+
+}
+
+
+void APlayerAvatar::DieProcess()
+{
+	PrimaryActorTick.bCanEverTick = false;
+	Destroy();
+	GEngine -> ForceGarbageCollection(true);
+}
