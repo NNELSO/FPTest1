@@ -96,7 +96,11 @@ I will share both of them here as text files. <br>
 I made it to about page 205 in the book before the game just refused to compile and I gave up on trying to sort out what was broken. <br>
 
 > Defense tower header file where I stopped at: [Defense Header File](Files/ADefenseTower.h.txt) <br>
+> Defense tower constructor file: [Defense Constructor File](Files/DefenseTower.cpp.txt) <br>
 > 
+---
+<img src="Images/RadiusDTC.png" height="60%" width="60"/><br>
+---
   <br>
   <br>
 
