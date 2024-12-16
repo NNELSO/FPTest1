@@ -67,12 +67,17 @@ Learning and Creating Pangaea <br>
 <br>
 
 
-## Next <br>
+## Having Build Issues <br>
 ---
 
-### Creating a Projectile class <br>
+### Switching Tactics <br>
 ---
 <br>
+
+So, I am having difficulties with getting my build to work in unreal. <br>
+I also am having difficulties trying to get videos in here. <br>
+So, I am going to go over how far I got before the project went to a mangled mess, <br>
+and some key things in each blueprint/lesson that I felt was useful knowledge for me.<br>
 
 
 ---
