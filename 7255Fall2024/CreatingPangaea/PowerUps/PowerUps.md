@@ -10,7 +10,7 @@
 ---
 
 ## PowerUps  <br>
-<img height="80%" src="Images/" width="80%"/><br>
+
 ---
 <br>
 <br>
