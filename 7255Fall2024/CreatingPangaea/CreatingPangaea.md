@@ -113,7 +113,7 @@ If you forget this your tower will have a tiny attack radius as that is what it 
 <img src="Images/StaticMeshDT.png" height="200%" width="200"/><br>
 ---
 ---
-<txt height="60%" width="60%"/><br>
+<txt height="60%" width="60%"/>
 Remember to add your choice of static mesh and the material in the blueprint.<br>
 <br>
 ---
