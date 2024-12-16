@@ -1,0 +1,69 @@
+// Fill out your copyright notice in the Description page of Project Settings.
+
+#pragma once
+
+#include "CoreMinimal.h"
+#include "GameFramework/Actor.h"
+#include "Components/StaticMeshComponent.h"
+#include "NiagaraFunctionLibrary.h"
+#include "NiagaraSystem.h"
+#include "NiagaraComponent.h"
+#include "PowerUp.generated.h"
+
+
+class APowerUp;
+
+
+UENUM(BlueprintType)
+enum PowerUpType
+{
+	Blue UMETA(DisplayName = "Blue"),
+	Green UMETA(DisplayName = "Green"),
+};
+
+UCLASS()
+class PANGAEA_API APowerUp : public AActor
+{
+	GENERATED_BODY()
+	
+public:	
+	// Sets default values for this actor's properties
+	APowerUp();
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category= "PowerUp")
+	TEnumAsByte<PowerUpType>PowerUpType{Blue};
+
+	UPROPERTY(EditAnywhere, Category= "PowerUp")
+	TArray<float>PowerUpDuration;
+
+	UPROPERTY(BlueprintReadWrite, Category= "PowerUp")
+	TArray<UMaterialInterface*> PowerUpMaterials;
+
+	UPROPERTY(BlueprintReadWrite, Category= "PowerUp")
+	float DurationOfEffect;
+
+	UPROPERTY(BlueprintReadOnly, Category= "PowerUp")
+	UMaterialInterface* OverlayToApply;
+
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category= "PowerUp")
+	UMeshComponent* Mesh;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category= "PowerUp")
+	UNiagaraComponent* PowerUpVFX;
+
+	//UPROPERTY(EditAnywhere, BlueprintReadWrite, Category= "PowerUp")
+	//TArray<ANiagaraActor*> PowVFX;
+
+	APowerUp* CurrentPowerUp{nullptr};
+
+	
+protected:
+	// Called when the game starts or when spawned
+	virtual void BeginPlay() override;
+
+public:	
+	// Called every frame
+	float GetDurationOfEffect() const {return DurationOfEffect;}
+	UMaterialInterface* GetOverlayMaterial() const { return OverlayToApply;}
+
+};
