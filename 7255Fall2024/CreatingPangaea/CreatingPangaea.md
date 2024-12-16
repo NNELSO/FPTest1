@@ -307,6 +307,24 @@ to make it turn green to be easier to see and adjust.<br>
 >PangaeaPlayerController Header file: [PangaeaPlayerController.h](Files/PangaeaPlayerController.h.txt)  <br>
 >PangaeaPlayerController Constructor file: [PangaeaPlayerController.cpp](Files/PangaeaPlayerController.cpp.txt) <br>
 
+---
+
+## Weapon <br>
+
+---
+
+<br>
+<txt height="100%" width="100%" />
+
+* This was the last component I added to my game before it would just not build out at all.<br>
+* It requires you are sockets to your skeleton, this process takes a bit of time to get it 
+right so the sword or weapon doesn't look like its going through the character's hand.<br>
+
+
+>Weapon Header file: [Weapon.h](Files/Weapon.h.txt)  <br>
+>Weapon Constructor file: [Weapon.cpp](Files/Weapon.cpp.txt) <br>
+<br>
+
 
 
 
