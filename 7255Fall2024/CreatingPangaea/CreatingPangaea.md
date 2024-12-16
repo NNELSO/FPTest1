@@ -105,7 +105,7 @@ Important thing to remember to adjust is the sphere radius of the SphereCollisio
 If you forget this your tower will have a tiny attack radius as that is what it will be used for.<br>
 <br>
 ---
-<img src="Images/StaticMeshDT.png" height="250%" width="250"/><br>
+<img src="Images/StaticMeshDT.png" height="200%" width="200"/><br>
 ---
   <br>
 
